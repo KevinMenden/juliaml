@@ -31,7 +31,7 @@ mutable struct GMModel
     end
 end
 
-function fitgmm(x::Vector{Number}, n_components::Integer, n_iter::Integer = 10)
+function fitgmm(x::Vector{Float64}, n_components::Integer, n_iter::Integer = 10)
     gmm = GMModel(n_components)
     n_samples = length(x)
 
